@@ -30,4 +30,9 @@ public class IndexController {
 	public String delete() {
 		return "delete";
 	}
+	
+	@GetMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
 }
