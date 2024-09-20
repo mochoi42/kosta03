@@ -20,4 +20,9 @@ public class IndexController {
 	public String insert() {
 		return "insert";
 	}
+	
+	@GetMapping("/update")
+	public String update() {
+		return "update";
+	}
 }
