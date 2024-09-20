@@ -27,8 +27,8 @@ jobs:
       # Docker 이미지를 빌드하고 Docker Hub에 푸시
       - name: Build and push Docker image
         run: |
-          docker build -t mochoi42/myapp:latest .
-          docker push mochoi42/myapp:latest
+          docker build -t choimorae/myapp:latest .
+          docker push choimorae/myapp:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build
