@@ -43,11 +43,11 @@ jobs:
           script_stop: true
           script: |
             # Docker Hub에 로그인
-            echo "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}" | docker login -u mochoi42 --password-stdin
+            echo "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}" | docker login -u choimorae --password-stdin
             # Docker 이미지 풀
-            docker pull mochoi42/myapp:latest
+            docker pull choimorae/myapp:latest
             # 기존 컨테이너 중지 및 제거
             docker stop myapp || true
             docker rm myapp || true
             # 새로운 컨테이너 실행
-            docker run -d -p 8080:8080 --name myapp mochoi42/myapp:latest
+            docker run -d -p 8080:8080 --name myapp choimorae/myapp:latest
