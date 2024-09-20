@@ -25,4 +25,9 @@ public class IndexController {
 	public String update() {
 		return "update";
 	}
+	
+	@GetMapping("/delete")
+	public String delete() {
+		return "delete";
+	}
 }
